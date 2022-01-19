@@ -1,0 +1,84 @@
+
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title><%= details.heading %></title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="service-list-styles.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="navbar">
+      <i class="ri-menu-line toggle-button" id="toggle-button"></i>
+      <a href="/"style="text-decoration: none; color: black;"><h1>Cherche.</h1></a>
+
+      <ul class="nav-list" id="nav-list">
+        <a href="/"
+          ><li class="list-your-business list-item">List your business</li></a
+        >
+        <a href="/"><li class="list-item">About Us</li></a>
+        <a href="/"><li class="list-item">Subscription</li></a>
+        <a href="/"><li class="list-item">Contact Us</li></a>
+        <i class="ri-close-line close-button" id="close-button"></i>
+      </ul>
+      <button class="sign-up">Sign Up</button>
+    </div>
+    <section class="cover">
+      <img src="<%=details.coverImage%>" class="cover-image" alt="" />
+      <h1 class="heading heading-cover"><%= details.heading %></h1>
+    </section>
+    <section class="result">
+      <h1 style="text-align: center; font-size: 55px" class="heading">
+        SERVICES
+      </h1>
+      <div class="results">
+        <% posts.forEach((post)=>{ %>
+        <a href="/<%=post.username%>" style="text-decoration: none">
+          <div class="wrap result-item">
+            <div class="content">
+              <h1 class="heading content-heading"><%=post.name %></h1>
+              <span class="text owner"><%=post.ownerName%></span>
+              <span class="text address"><%=post.address %></span>
+              <span class="text contact email"><%=post.email %></span>
+              <span class="text contact number"><%=post.number %></span>
+            </div>
+            <div class="image">
+              <%for(var i=0; i < 2; i++){%>
+              <img
+                class="content-image"
+                src="data:image/<%=(post.img)[i].contentType%>;base64,
+                  <%=(post.img)[i].data.toString('base64')%>"
+              />
+              <%}%>
+            </div>
+          </div>
+        </a>
+        <%})%>
+      </div>
+    </section>
+    <footer>
+      <i class="social ri-facebook-fill"></i>
+      <i class="social ri-instagram-fill"></i>
+      <!-- <div class="icon-links">
+  <a target="_blank" href="https://icons8.com/icon/u6A1fcsd1q2J/camera">Camera</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>
+  <a target="_blank" href="https://icons8.com/icon/J3w76cMS9cUS/building">Building</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>
+  <a target="_blank" href="https://icons8.com/icon/RET-D60tc0Ad/exercise">Exercise</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>
+  <a target="_blank" href="https://icons8.com/icon/kbfaWDoI-ce_/barbershop">Barbershop</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>
+  <a href="https://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a>
+  <a target="_blank" href="https://icons8.com/icon/y85HqcCjYO8b/makeup">Makeup</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>
+  <a target="_blank" href="https://icons8.com/icon/6tGfCYIU6wT8/art-prices">Art Prices</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>
+  <a target="_blank" href="https://icons8.com/icon/INcxb9GXWSZs/study">Study</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>
+  <a target="_blank" href="https://icons8.com/icon/m5AdCKGzNnfi/food-cart">Food Cart</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>
+  <a href="https://icons8.com/icon/0Zc6nNKuyiv6/fashion">Fashion icon by Icons8</a>
+  <a target="_blank" href="https://icons8.com/icon/npbn2kwbnS06/bakery">Bakery</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>
+</div>-->
+    </footer>
+    <script src="result.js" async defer></script>
+  </body>
+</html>

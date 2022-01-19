@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Home</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="styles-index.css">
+        <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    </head>
+    <body>
+        <div class="navbar">
+            <i class="ri-menu-line toggle-button" id="toggle-button"></i>
+            <a href="/" style="text-decoration: none; color: black;"><h1>Cherche.</h1></a>
+            
+            <ul class="nav-list" id="nav-list">
+                <a href="/"><li class=" list-your-business list-item">List your business</li></a>
+                <a href="#description"><li class="list-item">About Us</li></a>
+                <a href="#subscription"><li class="list-item">Subscription</li></a>
+                <a href="#contact"><li class="list-item">Contact Us</li></a>
+                <i class="ri-close-line close-button" id="close-button"></i>
+            </ul>
+            <button class="sign-up">Sign Up</button>
+        </div>
+        
+        <section class="cover" id="cover">
+            <img src="cover-pic.jpg" class="cover-image" alt="">
+            <div class="cover-content">
+                <h1 class="moto">LOCAL TO GLOBAL</h1>
+                <div class="search">
+                    <form action="/" method="post">
+                        <input class="input-list" list="servicelist" name="searchKey">
+                        <datalist class="service-list"id="servicelist">
+                            <option value="Bakery"></option>
+                            <option value="Food"></option>
+                            <option value="Art"></option>
+                            <option value="Fashion"></option>
+                            <option value="Education"></option>
+                            <option value="Makeup-Artist"></option>
+                            <option value="Mehendi-Artist"></option>
+                            <option value="Fitness"></option>
+                            <option value="Photography"></option>
+                            <option value="Salon"></option>
+                            <option value="Real-Estate"></option>
+                        </datalist>
+                        <button type="submit"  class="search-button" >Search<i class="ri-search-line"></i></button>
+                    </form>
+                </div>
+            </div>
+        </section>
+        <section class="service" id="service">
+            <div class="service-box wrap">
+                <h1 class="heading">Our Services</h1>
+                
+                <div class="service-table">
+                    <a href="/Bakery"><div class="table-item">
+                      <img src="bakery icon.png" alt="">  <span class="table-item-text">Bakery</span>
+                    </div></a>
+                    <a href="/Fashion"><div class="table-item">
+                      <img src="fashion icon.png" alt=""> <span class="table-item-text">Fashion</span>
+                    </div></a>
+                    <a href="/Food"><div class="table-item">
+                      <img src="food icon.png" alt=""> <span class="table-item-text">Food</span>
+                    </div></a>
+                    <a href="/Education"><div class="table-item">
+                      <img src="Education icon.png" alt=""> <span class="table-item-text">Education</span>
+                    </div></a>
+                    <a href="/Art"><div class="table-item">
+                      <img src="art icon.png" alt=""><span class="table-item-text">Art</span>
+                    </div></a>
+                    <a href="/Makeup-Artist"><div class="table-item">
+                      <img src="makeup icon.png" alt=""> <span class="table-item-text">Makeup Artist</span>
+                    </div></a>
+                    <a href="/Mehendi-Artist"><div class="table-item">
+                      <img src="Mehendi icon.png" alt=""> <span class="table-item-text">Mehendi Artist</span>
+                    </div></a>
+                    <a href="/Salon"><div class="table-item">
+                      <img src="salon icon.png" alt=""> <span class="table-item-text">Salon</span>
+                    </div></a>
+                    <a href="/Fitness"><div class="table-item">
+                      <img src="fitness icon.png" alt=""><span class="table-item-text"> Fitness</span>
+                    </div></a>
+                    <a href="/Real-Estate"><div class="table-item">
+                      <img src="real estate icon.png" alt=""> <span class="table-item-text">Real Estate</span>
+                    </div></a>
+                    <a href="/Photography"><div class="table-item">
+                      <img src="photography icon.png" alt=""> <span class="table-item-text">Photography</span>
+                    </div></a>
+                    
+                  </div>
+            </div>
+        </section>
+        <div class="decoration-right"></div>
+        <hr>
+        <section class="description" id="description">
+          <div class="wrap description-box">
+            <h1 class="heading">What We Do</h1>
+            <p class="aboutus">
+              In this lock down stricken economy we aim to provide a platform for all the small business owners to increase their business exponentially and make an impact to the economy.
+              <br>
+              We aim to provide a fast, reliable and comprehensive information to our users and connect buyers to sellers according to the nearest locations and their budget.
+  
+        </p>
+        <div class="tiles-div">
+        <div class="tiles" style="background-color: #FF7676;">
+          <div class="box-decor"></div>
+          Lifestyle
+          <p>
+          
+          </p>
+          <button class="learn-more">Learn More</button>
+        </div>
+        <div class="tiles" style="background-color: #F6F49D;">
+          <div class="box-decor"></div>
+          Education
+          <p>
+            
+          </p>
+          <button class="learn-more">Learn More</button>
+        </div>
+        <div class="tiles" style="background-color: #5DAE8B;">
+          <div class="box-decor"></div>
+          Travel
+          <p>
+          
+          </p>
+          <button class="learn-more">Learn More</button>
+        </div>
+        <div class="tiles" style="background-color: #466C95;">
+          <div class="box-decor"></div>
+          Food
+          <p>
+           
+          </p>
+          <button class="learn-more">Learn More</button>
+        </div>
+      </div>
+          </div>
+          
+        </section>
+        <div class="decoration-left"></div>
+        <hr>
+        <section class="subscription" id="subscription">
+          <div class="wrap subscription-box">
+            <h1 class="heading">Pricing</h1>
+            <div class="pricing-box">
+            <div class="pricing"></div>
+            <div class="pricing"></div>
+            <div class="pricing"></div></div>
+          </div>
+        </section>
+        <hr>
+        <section class="contact" id="contact">
+          <div class="wrap contact-box"><h1 class="heading contact-details">Call Us: XXX XXX XXXX <br>OR <br> Mail Us: xyz@cmail.ab</h1></div>
+          
+        </section>
+        <hr>
+        <footer>
+          <i class=" social ri-facebook-fill"></i>
+          <i class="social ri-instagram-fill"></i>
+          <!-- <div class="icon-links">
+    <a target="_blank" href="https://icons8.com/icon/u6A1fcsd1q2J/camera">Camera</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>
+    <a target="_blank" href="https://icons8.com/icon/J3w76cMS9cUS/building">Building</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>
+    <a target="_blank" href="https://icons8.com/icon/RET-D60tc0Ad/exercise">Exercise</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>
+    <a target="_blank" href="https://icons8.com/icon/kbfaWDoI-ce_/barbershop">Barbershop</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>
+    <a href="https://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a>
+    <a target="_blank" href="https://icons8.com/icon/y85HqcCjYO8b/makeup">Makeup</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>
+    <a target="_blank" href="https://icons8.com/icon/6tGfCYIU6wT8/art-prices">Art Prices</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>
+    <a target="_blank" href="https://icons8.com/icon/INcxb9GXWSZs/study">Study</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>
+    <a target="_blank" href="https://icons8.com/icon/m5AdCKGzNnfi/food-cart">Food Cart</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>
+    <a href="https://icons8.com/icon/0Zc6nNKuyiv6/fashion">Fashion icon by Icons8</a>
+    <a target="_blank" href="https://icons8.com/icon/npbn2kwbnS06/bakery">Bakery</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>
+  </div>-->
+        </footer>
+        <script src="index.js" async defer></script>
+    </body>
+</html>

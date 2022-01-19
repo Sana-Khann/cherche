@@ -1,0 +1,68 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title></title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="seller-style.css">
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css"
+    rel="stylesheet"
+  />
+  </head>
+  <body>
+    <div class="navbar">
+      <i class="ri-menu-line toggle-button" id="toggle-button"></i>
+      <a href="/" style="text-decoration: none; color: black;"><h1>Cherche.</h1></a>
+      
+      <ul class="nav-list" id="nav-list">
+          <a href="/"><li class=" list-your-business list-item">List your business</li></a>
+          <a href="/"><li class="list-item">About Us</li></a>
+          <a href="/"><li class="list-item">Subscription</li></a>
+          <a href="/"><li class="list-item">Contact Us</li></a>
+          <i class="ri-close-line close-button" id="close-button"></i>
+      </ul>
+      <button class="sign-up">Sign Up</button>
+  </div>
+    <% posts.forEach((post)=>{%>
+      <section class="post">
+        <div class="post-box">
+          <div class="details">
+            
+            <h1 class="detail-name"><%=post.name %></h1>
+            <h3 class="detail-name"><%=post.ownerName %></h3>
+            <h3 class="detail-name"><%=post.address %></h3>
+            <h3 class="detail-name"><%=post.email %></h3>
+            <h3 class="detail-name"><%=post.number %></h3>
+            <!--<h3 class="owner-name">First Last</h3>-->
+            <ul class="detail-list">
+              <ul class="detail-list">
+                <%(post.desc).forEach((li)=>{%>
+                  <li class="detail-list-items"><%= li %></li>
+                <%})%>
+              
+          </ul>
+            <p class="shop-details">
+              <%= post.description %>
+            </p>
+          </div>
+         
+          <div class="images">
+            <%(post.img).forEach((postItem)=>{%>
+              <img class="shop-photo-content active" src="data:image/<%=postItem.contentType%>;base64,
+              <%=postItem.data.toString('base64')%>">
+              <% }) %>
+          </div>
+        </div>
+      </section>
+    <%})%>
+    
+
+    <script src="seller-post.js" async defer>
+      
+    </script>
+  </body>
+</html>
